@@ -24,4 +24,12 @@ class Movie {
     }
 }
 
+// Messaggio con le info del primo film
+$firstMovie = new Movie('Ritorno al futuro', 'Fantasy', 116, '03-07-1985');
+var_dump($firstMovie);
+echo $firstMovie->getAllInfoFilm();
+// Messaggio con le info del secondo film
+$secondMovie = new Movie('Ritorno al futuro II', 'Fantasy', 108, '22-11-1989');
+var_dump($secondMovie);
+echo $secondMovie->getAllInfoFilm();
 ?>
