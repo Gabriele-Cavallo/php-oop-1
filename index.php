@@ -5,8 +5,12 @@ class Movie {
     public $duration;
     public $releaseDate;
 
+    public static $genres = [
+        'fantasy', 'action', 'family', 'comedy'
+    ];
+
     // Costruttore che richiede i paramentri obbligatori
-    public function __construct(string $_title, string $_genre, string $_duration, string $_releaseDate){
+    public function __construct(string $_title, $_genre, string $_duration, string $_releaseDate){
         $this->title = $_title;
         $this->genre = $_genre;
         $this->duration = $_duration . ' ' . 'min';
@@ -22,14 +26,16 @@ class Movie {
 
         return $title . ' it\'s a ' . $genre . ' film ' . 'released in ' . $releaseDate . ' with a running time of ' . $duration . '.';
     }
+
+    
 }
 
 // Messaggio con le info del primo film
-$firstMovie = new Movie('Ritorno al futuro', 'Fantasy', 116, '03-07-1985');
+$firstMovie = new Movie('Ritorno al futuro', implode(', ', Movie::$genres), 116, '03-07-1985');
 var_dump($firstMovie);
 echo $firstMovie->getAllInfoFilm();
 // Messaggio con le info del secondo film
-$secondMovie = new Movie('Ritorno al futuro II', 'Fantasy', 108, '22-11-1989');
+$secondMovie = new Movie('Ritorno al futuro II', implode(', ', Movie::$genres), 108, '22-11-1989');
 var_dump($secondMovie);
 echo $secondMovie->getAllInfoFilm();
 ?>
