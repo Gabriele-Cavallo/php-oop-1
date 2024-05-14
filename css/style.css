@@ -8,7 +8,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: bisque;
+    background-color: grey;
 }
 h1{
     width: 100%;
@@ -24,12 +24,12 @@ h1{
     justify-content: space-between;
     align-items: center;
 }
-.card-wrapper{
+.card{
     text-align: center;
     padding: 40px;
     border-radius: 15px;
     width: calc((100% / 3) - 20px);
     margin: 10px 0;
-    background-color: grey;
+    background-color: bisque;
     box-shadow: 1px 1px 1px 1px black;
 }

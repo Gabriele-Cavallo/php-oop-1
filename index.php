@@ -22,9 +22,9 @@ require_once __DIR__ . './db.php';
     <div class="container">
         <h1>OUR MOVIES</h1>
         <?php foreach($movies as $movie) { ?>
-            <div class="card-wrapper">
+            <div class="card">
                 <h3>Title : <?php echo $movie->title ?></h3>
-                <div>Release <?php echo $movie->releaseDate ?></div>
+                <div>Release date: <?php echo $movie->releaseDate ?></div>
                 <div>Genres: <?php echo $movie->genre ?></div>
                 <div>Duration: <?php echo $movie->duration ?></div>
             </div>
