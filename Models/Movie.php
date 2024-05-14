@@ -8,6 +8,9 @@ class Movie {
     public static $genres = [
         'fantasy', 'action', 'family', 'comedy'
     ];
+    public static $genresWick = [
+        'thriller', 'noir', 'action', 'police procedural'
+    ];
 
     // Costruttore che richiede i paramentri obbligatori
     public function __construct(string $_title, $_genre, string $_duration, string $_releaseDate){
